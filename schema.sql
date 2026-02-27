@@ -6,4 +6,3 @@ CREATE TABLE peserta (
     kategori_lomba TEXT NOT NULL, -- Contoh: Solo, Group, Hip-hop, dll.
     nomor_wa TEXT NOT NULL,
     tanggal_daftar DATETIME DEFAULT CURRENT_TIMESTAMP
-);

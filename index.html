@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Dance Competition 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <div class="min-h-screen flex items-center justify-center p-6">
+        <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-md border border-purple-500">
+            <h2 class="text-3xl font-bold mb-2 text-center text-purple-400">Join the Beat!</h2>
+            <p class="text-gray-400 text-center mb-8">Daftarkan dirimu/timmu sekarang.</p>
+
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
+                    <input type="text" name="nama" placeholder="Masukkan nama sesuai KTP" 
+                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1">Email</label>
+                    <input type="email" name="email" placeholder="contoh@mail.com" 
+                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1">Kategori</label>
+                    <select name="kategori" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
+                        <option value="solo">Solo Performance</option>
+                        <option value="group">Group / Crew</option>
+                        <option value="hiphop">Hip Hop Battle</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1">Nomor WhatsApp</label>
+                    <input type="tel" name="wa" placeholder="0812xxxx" 
+                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition duration-300 shadow-lg shadow-purple-500/20">
+                    Daftar Sekarang
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
