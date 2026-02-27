@@ -3,51 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi Dance Competition 2026</title>
+    <title>Registration | Dance Competition 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #1e1b4b, #0f172a);
+        }
+    </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="min-h-screen text-white font-sans flex flex-col items-center justify-center p-6">
 
-    <div class="min-h-screen flex items-center justify-center p-6">
-        <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-md border border-purple-500">
-            <h2 class="text-3xl font-bold mb-2 text-center text-purple-400">Join the Beat!</h2>
-            <p class="text-gray-400 text-center mb-8">Daftarkan dirimu/timmu sekarang.</p>
+    <div class="text-center mb-10">
+        <h1 class="text-5xl font-black tracking-tighter italic text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 uppercase">
+            Neon Beat 2026
+        </h1>
+        <p class="text-gray-400 mt-2 tracking-widest uppercase text-sm">National Dance Championship</p>
+    </div>
 
-            <form action="#" method="POST" class="space-y-4">
+    <div class="bg-gray-800/50 backdrop-blur-md p-8 rounded-3xl shadow-2xl w-full max-w-md border border-white/10">
+        <h2 class="text-2xl font-semibold mb-6">Formulir Pendaftaran</h2>
+
+        <form id="registrationForm" class="space-y-5">
+            <div>
+                <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Nama Lengkap / Grup</label>
+                <input type="text" required placeholder="Contoh: J-SQUAD" 
+                       class="w-full p-4 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 outline-none transition-all placeholder:text-gray-600 text-white">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
                 <div>
-                    <label class="block text-sm font-medium mb-1">Nama Lengkap</label>
-                    <input type="text" name="nama" placeholder="Masukkan nama sesuai KTP" 
-                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium mb-1">Email</label>
-                    <input type="email" name="email" placeholder="contoh@mail.com" 
-                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-sm font-medium mb-1">Kategori</label>
-                    <select name="kategori" class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
-                        <option value="solo">Solo Performance</option>
-                        <option value="group">Group / Crew</option>
-                        <option value="hiphop">Hip Hop Battle</option>
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Kategori</label>
+                    <select class="w-full p-4 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-pink-500 outline-none text-white appearance-none">
+                        <option>Solo</option>
+                        <option>Duo</option>
+                        <option>Group</option>
                     </select>
                 </div>
-
                 <div>
-                    <label class="block text-sm font-medium mb-1">Nomor WhatsApp</label>
-                    <input type="tel" name="wa" placeholder="0812xxxx" 
-                           class="w-full p-3 rounded bg-gray-700 border border-gray-600 focus:border-purple-500 outline-none">
+                    <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Genre</label>
+                    <select class="w-full p-4 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-pink-500 outline-none text-white appearance-none">
+                        <option>Hip Hop</option>
+                        <option>Contemporary</option>
+                        <option>B-Boy</option>
+                    </select>
                 </div>
+            </div>
 
-                <button type="submit" 
-                        class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition duration-300 shadow-lg shadow-purple-500/20">
-                    Daftar Sekarang
-                </button>
-            </form>
-        </div>
+            <div>
+                <label class="block text-xs font-bold uppercase text-gray-400 mb-1 ml-1">Nomor WhatsApp</label>
+                <div class="relative">
+                    <span class="absolute left-4 top-4 text-gray-500">+62</span>
+                    <input type="tel" required placeholder="812345678" 
+                           class="w-full p-4 pl-14 rounded-xl bg-gray-900/50 border border-gray-700 focus:border-pink-500 outline-none">
+                </div>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-black py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-95 shadow-lg shadow-pink-500/20 uppercase tracking-widest mt-4">
+                Daftar Sekarang
+            </button>
+        </form>
     </div>
+
+    <p class="mt-8 text-gray-500 text-xs">© 2026 Dance Competition Management. All Rights Reserved.</p>
 
 </body>
 </html>
